@@ -50,14 +50,14 @@ local tasklist = function(t)
             {
                 {
                     id = "clienticon",
-                    forced_width = dpi(22),
+                    forced_width = 22,
                     widget = awful.widget.clienticon
                 },
                 widget = wibox.container.place
             },
             {
                 id = "background_role",
-                forced_height = dpi(2),
+                forced_height = 2,
                 widget = wibox.container.background
             },
             layout = wibox.layout.align.vertical,

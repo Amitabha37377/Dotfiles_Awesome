@@ -178,7 +178,7 @@ end)
 --Autostart Applications
 awful.spawn.with_shell("picom")
 awful.spawn.with_shell(
-  "feh --bg-scale ~/Downloads/Wallpapers/wp2468029-lapras-hd-wallpapers.jpg")
+  "feh --bg-scale ~/Downloads/Wallpapers/desktop-1920x1080.png")
 awful.util.spawn("nm-applet")
 awful.spawn.with_shell('xinput set-prop "ELAN0791:00 04F3:30FD Touchpad" "libinput Tapping Enabled" 1')
 

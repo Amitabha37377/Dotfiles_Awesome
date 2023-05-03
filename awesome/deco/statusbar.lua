@@ -654,13 +654,27 @@ awful.screen.connect_for_each_screen(function(s)
     awful.button({}, 5, function() awful.layout.inc(-1) end)
   ))
 
-  -- Create a taglist widget
-  s.mytaglist = awful.widget.taglist {
-    screen  = s,
-    filter  = awful.widget.taglist.filter.all,
-    buttons = taglist_buttons
-  }
 
+  awful.screen.connect_for_each_screen(function(s)
+    local fancy_taglist = require("fancy_taglist")
+    s.mytaglist = fancy_taglist.new({
+      screen   = s,
+      taglist  = { buttons = taglist_buttons },
+      tasklist = { buttons = tasklist_buttons },
+      -- taglist_buttons  = mytagbuttons,
+      -- tasklist_buttons = tasklist_buttons,
+      filter   = awful.widget.taglist.filter.all,
+    })
+  end)
+
+
+  -- Create a taglist widget
+  -- s.mytaglist = awful.widget.taglist {
+  --   screen  = s,
+  --   filter  = awful.widget.taglist.filter.all,
+  --   buttons = taglist_buttons
+  -- }
+  --
   -- Create a tasklist widget
   -- s.mytasklist = awful.widget.tasklist {
   --   screen  = s,
@@ -733,6 +747,7 @@ awful.screen.connect_for_each_screen(function(s)
         -- Left widgets
         layout = wibox.layout.fixed.horizontal,
         s.mytaglist,
+        separator,
         s.mypromptbox,
         separator,
         separator,

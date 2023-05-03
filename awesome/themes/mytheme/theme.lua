@@ -43,21 +43,21 @@ theme.tasklist_shape_border_color               = '#000000'
 
 
 --Systray
-theme.bg_systray          = "#00000080"
+theme.bg_systray                 = "#00000080"
 
 -- Default layout icons
-theme.layout_fairh        = "/usr/share/awesome/themes/default/layouts/fairhw.png"
-theme.layout_fairv        = "/usr/share/awesome/themes/default/layouts/fairvw.png"
-theme.layout_floating     = "/usr/share/awesome/themes/default/layouts/floatingw.png"
-theme.layout_magnifier    = "/usr/share/awesome/themes/default/layouts/magnifierw.png"
-theme.layout_max          = "/usr/share/awesome/themes/default/layouts/maxw.png"
-theme.layout_fullscreen   = "/usr/share/awesome/themes/default/layouts/fullscreenw.png"
-theme.layout_tilebottom   = "/usr/share/awesome/themes/default/layouts/tilebottomw.png"
-theme.layout_tileleft     = "/usr/share/awesome/themes/default/layouts/tileleftw.png"
-theme.layout_tile         = "/usr/share/awesome/themes/default/layouts/tilew.png"
-theme.layout_tiletop      = "/usr/share/awesome/themes/default/layouts/tiletopw.png"
-theme.layout_spiral       = "/usr/share/awesome/themes/default/layouts/spiralw.png"
-theme.layout_dwindle      = "/usr/share/awesome/themes/default/layouts/dwindlew.png"
+theme.layout_fairh               = "/usr/share/awesome/themes/default/layouts/fairhw.png"
+theme.layout_fairv               = "/usr/share/awesome/themes/default/layouts/fairvw.png"
+theme.layout_floating            = "/usr/share/awesome/themes/default/layouts/floatingw.png"
+theme.layout_magnifier           = "/usr/share/awesome/themes/default/layouts/magnifierw.png"
+theme.layout_max                 = "/usr/share/awesome/themes/default/layouts/maxw.png"
+theme.layout_fullscreen          = "/usr/share/awesome/themes/default/layouts/fullscreenw.png"
+theme.layout_tilebottom          = "/usr/share/awesome/themes/default/layouts/tilebottomw.png"
+theme.layout_tileleft            = "/usr/share/awesome/themes/default/layouts/tileleftw.png"
+theme.layout_tile                = "/usr/share/awesome/themes/default/layouts/tilew.png"
+theme.layout_tiletop             = "/usr/share/awesome/themes/default/layouts/tiletopw.png"
+theme.layout_spiral              = "/usr/share/awesome/themes/default/layouts/spiralw.png"
+theme.layout_dwindle             = "/usr/share/awesome/themes/default/layouts/dwindlew.png"
 
 --Taglist_improved themes
 -- --Gruvbox Theme taglist
@@ -85,15 +85,19 @@ theme.layout_dwindle      = "/usr/share/awesome/themes/default/layouts/dwindlew.
 -- theme.taglist_fg_focus    = "#2b2b2b"
 
 -- Catppuccino
-theme.taglist_bg_empty    = "#00000080"
-theme.taglist_fg_empty    = "#d8dee9"
-theme.taglist_bg_occupied = "#434c5e"
-theme.taglist_fg_occupied = "#d8dee9"
-theme.taglist_bg_focus    = "#6ab0c1"
-theme.taglist_fg_focus    = "#2b2b2b"
+theme.taglist_bg_empty           = "#00000080"
+theme.taglist_fg_empty           = "#d8dee9"
+theme.taglist_bg_occupied        = "#434c5e"
+theme.taglist_fg_occupied        = "#d8dee9"
+theme.taglist_bg_focus           = "#6ab0c1"
+theme.taglist_fg_focus           = "#2b2b2b"
 
+--Other Taglist settings
+theme.taglist_spacing            = 2
+theme.taglist_shape_border_width = 3
+theme.taglist_shape_border_color = "#0000aa"
 
 --Theme
-theme.font               = "CaskaydiaCove Nerd Font 14"
-theme.icon_empty_notibox = "~/.config/awesome/themes/mytheme/icons/mail-receive.svg"
+theme.font                       = "CaskaydiaCove Nerd Font 14"
+theme.icon_empty_notibox         = "~/.config/awesome/themes/mytheme/icons/mail-receive.svg"
 return theme
